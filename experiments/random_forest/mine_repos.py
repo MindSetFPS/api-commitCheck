@@ -36,24 +36,41 @@ GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 # Format: (github_owner, repo_name)
 # ----------------------------------------------------------------
 REPOS = [
-        ("hooram",        "ownphotos-frontend"),
+        ("blockscout",    "frontend"),
+        ("cloudreve",     "frontend"),
         ("documize",      "documize-community"),
-            ("KSJaay",        "Lunalytics"),
-    ("django",        "django"),
-    ("dockpeek",      "dockpeek"),
-    ("soumyajit4419", "Portfolio"),
-    ("guardian",      "frontend"),
-    ("blockscout",    "frontend"),
-    ("SillyTavern",   "SillyTavern"),
-    ("journiv",       "journiv-app"),
-    ("cloudreve",     "frontend"),
+        ("django",        "django"),
+        ("dockpeek",      "dockpeek"),
+        ("EmulatorJS",    "EmulatorJS"),
+        ("hooram",        "ownphotos-frontend"),
+        ("KSJaay",        "Lunalytics"),
+        ("guardian",      "frontend"),
+        ("libre-tube",    "LibreTube"),
+        ("journiv",       "journiv-app"),
         ("GitbookIO",     "gitbook"),
         ("pancakeswap",   "pancake-frontend"),
-        ("EmulatorJS",    "EmulatorJS"),
-            ("libre-tube",    "LibreTube"),
+        ("pallets",       "flask"),
+        ("soumyajit4419", "Portfolio"),
+        ("SillyTavern",   "SillyTavern"),
+        ("source-academy", "frontend"),
+        ("hacs", "frontend"),
+        ("ultrasoundmoney", "frontend"),
+        ("podkrepi-bg", "frontend"),
+        ("quran", "quran.com-frontend-next"),
+        ("nurikk", "zigbee2mqtt-frontend"),
+        ("medusajs", "nextjs-starter-medusa"), 
+        ("diamond-app",  "frontend"),
+        ("skillrecordings", "egghead-next"),
+        ("CopilotKit", "CopilotKit"),
+        ("codecrafters-io", "frontend"),
+        ("balancer",  "frontend-v2"),
+        ("marmelab", "react-admin"),
+        ("Vali-98", "ChatterUI"),
+        ("LlamaSwap", "interface"),
+        ("nuclia", "frontend")
+
     # ("facebook",      "react"),
     # ("microsoft",     "vscode"),
-    ("pallets",       "flask"),
     # ("apache",        "airflow"),
     # ("psf",           "requests"),
     # ("scikit-learn",  "scikit-learn"),
@@ -67,7 +84,7 @@ PR_OUTPUT      = os.path.abspath("data/raw/pull_requests.csv")
 COMMIT_OUTPUT  = os.path.abspath("data/raw/commits.csv")
 
 # How many merged PRs to extract per repo
-MAX_PRS_PER_REPO = 500
+MAX_PRS_PER_REPO = 800
 
 # Only use GitHub API for review metadata if token is provided
 USE_GITHUB_API = bool(GITHUB_TOKEN)
